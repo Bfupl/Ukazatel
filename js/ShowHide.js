@@ -27,7 +27,7 @@ function showRefereeView() {
 
     $("#viewDelegate").hide();
 
-    $("#text").text("Съдий");
+    $("#text").text("Съдии");
 }
 
 
