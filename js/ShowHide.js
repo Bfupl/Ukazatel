@@ -116,6 +116,38 @@ function showLogoutView() {
 
 
 }
+function searchNames() {
+  var input = document.getElementById("Search");
+  var filter = input.value.toLowerCase();
+  var filter2 = filter.substring(0, 1);
+  var nodes = document.getElementsByClassName('col-md-4 col-sm-6 col-xs-12');
+  var nodes2 = document.getElementsByClassName('col-md-6 col-md-offset-3 text-center');
+ 
+
+  for (i = 0; i < nodes.length; i++) {
+    if (nodes[i].innerText.toLowerCase().includes(filter)) {
+      nodes[i].style.display = "block";
+	
+	 
+    } else {
+      nodes[i].style.display = "none";
+	   
+	  
+    }
+  }
+  for (i = 0; i < nodes2.length; i++) {
+    if (nodes2[i].innerText.toLowerCase().includes(filter2)) {
+nodes2[i].style.display = "block";
+	 
+    } else {
+       nodes2[i].style.display = "none";
+	   
+	  
+    }
+  }
+  
+}
+
 $(function () {
 
 
